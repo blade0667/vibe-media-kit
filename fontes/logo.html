@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Vibe Eletronics — modelos de logo</title>
+<link rel="stylesheet" href="marca.css">
+<!-- Variações pelo endereço: logo.html#horizontal-escuro, #vertical-claro, #nome-escuro, #simbolo … -->
+<script>document.documentElement.className = location.hash.slice(1).replace(/-/g, " ");</script>
+<style>
+  html, body { width: 100%; height: 100%; background: transparent; }
+  body { display: grid; place-items: center; }
+  .lockup { gap: 92px; }
+  .logo { width: 480px; height: 480px; }
+  .wordmark { gap: 60px; }
+  .wordmark .vibe { font-size: 380px; }
+  .wordmark .ele { font-size: 100px; }
+
+  .vertical .lockup { flex-direction: column; gap: 84px; }
+  .vertical .logo { width: 560px; height: 560px; }
+  .nome .logo { display: none; }
+  .simbolo .wordmark { display: none; }
+  .simbolo .logo { width: 1024px; height: 1024px; }
+
+  /* versão para fundo claro: sem degradê, tons escuros */
+  .claro .wordmark .vibe { background: none; color: var(--bg1); }
+  .claro .wordmark .ele { color: var(--mint-escuro); }
+  /* versão de uma cor (branco) */
+  .branco .wordmark .vibe { background: none; color: #fff; }
+  .branco .wordmark .ele { color: #fff; }
+</style>
+</head>
+<body>
+  <div class="lockup">
+    <div class="logo"><img src="simbolo-original.png" alt=""></div>
+    <div class="wordmark">
+      <span class="vibe">VIBE</span>
+      <span class="ele"><i>E</i><i>L</i><i>E</i><i>T</i><i>R</i><i>O</i><i>N</i><i>I</i><i>C</i><i>S</i></span>
+    </div>
+  </div>
+</body>
+</html>

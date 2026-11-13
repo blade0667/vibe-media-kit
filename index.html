@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vibe Eletronics · Media kit</title>
+<meta name="description" content="Media kit da Vibe Eletronics: assistência técnica de celulares com 6 lojas em Armação dos Búzios, RJ. Apresentação, logos, cores, flyer e artes para download.">
+<meta property="og:title" content="Vibe Eletronics · Media kit">
+<meta property="og:description" content="Assistência técnica de celulares com 6 lojas em Búzios. Apresentação, logos, cores, flyer e artes para download.">
+<meta property="og:image" content="https://blade0667.github.io/vibe-media-kit/img/og.jpg">
+<meta property="og:url" content="https://blade0667.github.io/vibe-media-kit/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0520">
+<link rel="icon" href="img/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap">
+<style>
+/* Layout: mesma identidade do flyer — roxo profundo, verde-água, cartões de vidro, títulos em Oswald */
+:root {
+  --bg0: #0b0520; --bg1: #1c0e40; --bg2: #3e1f7a;
+  --mint: #4ff0d2; --cyan: #2fd8ff; --muted: #cfc6f2; --text: #fff;
+  --glass: rgba(255,255,255,.06); --line: rgba(160,230,255,.22);
+  --wa: #25d366;
+  --max: 1160px; --gut: clamp(18px, 4vw, 40px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+  font-family: "Montserrat", "Segoe UI", sans-serif; font-weight: 500; font-size: 17px; line-height: 1.6;
+  color: var(--text); background: var(--bg0);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(var(--max), 100% - 2 * var(--gut)); margin-inline: auto; }
+
+/* fundo com feixes, igual ao flyer */
+.glow { position: relative; isolation: isolate; }
+.glow::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(70% 55% at 88% 0%, rgba(47,216,255,.24), transparent 60%),
+    radial-gradient(60% 70% at 0% 60%, rgba(124,77,255,.34), transparent 60%),
+    repeating-linear-gradient(115deg, transparent 0 140px, rgba(255,255,255,.028) 140px 220px, transparent 220px 360px),
+    linear-gradient(160deg, var(--bg1) 0%, var(--bg2) 55%, #24125a 100%);
+}
+
+/* ---------- Tipos ---------- */
+h1, h2, h3, .osw { font-family: "Oswald", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; line-height: 1.08; }
+h1 { font-size: clamp(34px, 4.7vw, 58px); }
+h2 { font-size: clamp(30px, 4.2vw, 46px); }
+h3 { font-size: 22px; letter-spacing: .06em; }
+em { font-style: normal; color: var(--mint); }
+.eyebrow { font-family: "Oswald", sans-serif; font-weight: 600; font-size: 16px; letter-spacing: .22em; text-transform: uppercase; color: var(--mint); margin-bottom: 14px; }
+.lead { color: var(--muted); font-size: clamp(17px, 1.6vw, 19px); max-width: 62ch; margin-top: 16px; }
+.lead b, p b { color: #fff; font-weight: 700; }
+section { padding: clamp(56px, 8vw, 96px) 0; }
+.head { margin-bottom: clamp(28px, 4vw, 44px); }
+
+/* ---------- Peças ---------- */
+.card { background: var(--glass); border: 1.5px solid var(--line); border-radius: 22px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  padding: 13px 22px; border-radius: 999px; border: 2px solid transparent;
+  font: 800 15px/1 "Montserrat", sans-serif; text-decoration: none; cursor: pointer; white-space: nowrap;
+  transition: transform .15s, box-shadow .15s, background .15s;
+}
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn:hover { transform: translateY(-2px); }
+.btn.cheio { background: var(--mint); color: var(--bg1); box-shadow: 0 8px 28px rgba(79,240,210,.28); }
+.btn.linha { border-color: rgba(79,240,210,.55); color: #fff; background: transparent; }
+.btn.linha:hover { background: rgba(79,240,210,.12); }
+.btn.wa { background: linear-gradient(90deg, #25d366, #128c7e); color: #fff; }
+.btn.mini { padding: 9px 14px; font-size: 13px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--glass); font-size: 14px; font-weight: 700; }
+.chip.claro { background: rgba(255,255,255,.95); color: var(--bg1); border-color: transparent; font-weight: 800; }
+
+/* ---------- Topo ---------- */
+.topo { position: sticky; top: 0; z-index: 20; background: rgba(11,5,32,.82); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,.08); }
+.topo .wrap { display: flex; align-items: center; gap: 24px; height: 68px; }
+.marca { display: flex; align-items: center; gap: 12px; text-decoration: none; margin-right: auto; }
+.marca img { width: 40px; height: 40px; }
+.marca span { font-weight: 900; font-size: 20px; letter-spacing: .02em; }
+.marca small { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: .34em; color: var(--mint); margin-top: -3px; }
+.topo nav { display: flex; gap: 22px; }
+.topo nav a { font-size: 14px; font-weight: 700; text-decoration: none; color: var(--muted); }
+.topo nav a:hover { color: #fff; }
+@media screen and (max-width: 900px) { .topo nav { display: none; } }
+
+/* ---------- Abertura ---------- */
+.hero { padding: clamp(48px, 7vw, 88px) 0 clamp(56px, 8vw, 96px); overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.hero .acoes { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 26px; }
+.pilha { position: relative; width: min(340px, 78%); margin: 20px auto; aspect-ratio: 2/3; }
+.pilha img { position: absolute; inset: 0; width: 100%; border-radius: 14px; box-shadow: 0 30px 70px rgba(0,0,0,.55); }
+.pilha img:first-child { transform: rotate(8deg) translate(16%, 2%); filter: brightness(.82); }
+.pilha img:last-child { transform: rotate(-4deg); }
+@media screen and (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } .pilha { order: -1; width: min(230px, 60%); margin-bottom: 34px; } }
+
+/* ---------- Números ---------- */
+.numeros { padding: 0; background: var(--bg0); border-block: 1px solid rgba(255,255,255,.08); }
+.numeros .wrap { display: grid; grid-template-columns: repeat(6, 1fr); }
+.num { padding: 28px 14px; text-align: center; border-left: 1px solid rgba(255,255,255,.08); }
+.num:first-child { border-left: 0; }
+.num b { display: block; font: 700 clamp(34px, 4vw, 46px)/1 "Oswald", sans-serif; color: var(--mint); }
+.num span { display: block; margin-top: 8px; font-size: 13.5px; line-height: 1.35; color: var(--muted); }
+@media screen and (max-width: 860px) { .numeros .wrap { grid-template-columns: repeat(3, 1fr); } .num:nth-child(4) { border-left: 0; } .num:nth-child(n+4) { border-top: 1px solid rgba(255,255,255,.08); } }
+@media screen and (max-width: 480px) { .numeros .wrap { grid-template-columns: repeat(2, 1fr); } .num { border-top: 1px solid rgba(255,255,255,.08); } .num:nth-child(odd) { border-left: 0; } .num:nth-child(4) { border-left: 1px solid rgba(255,255,255,.08); } }
+
+/* ---------- Grades ---------- */
+.g2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+@media screen and (max-width: 860px) { .g3 { grid-template-columns: 1fr 1fr; } .g4 { grid-template-columns: 1fr 1fr; } }
+@media screen and (max-width: 600px) { .g2, .g3 { grid-template-columns: 1fr; } }
+.bloco { padding: 26px; }
+.bloco p { color: var(--muted); font-size: 15.5px; margin-top: 8px; }
+.sub { margin-top: clamp(36px, 5vw, 56px); }
+.sub > h3 { margin-bottom: 18px; color: var(--mint); }
+
+.lista { list-style: none; display: grid; gap: 11px; margin-top: 16px; }
+.lista li { display: flex; align-items: center; gap: 12px; font-weight: 600; }
+.lista li::before {
+  content: ""; flex: none; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%231c0e40' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/15px no-repeat;
+}
+.lista.nao li::before { background-color: #ff7a90; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 7l10 10M17 7L7 17' fill='none' stroke='%231c0e40' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E"); }
+.lista.txt li { align-items: flex-start; font-weight: 500; font-size: 15.5px; color: var(--muted); }
+.lista.txt li::before { margin-top: 2px; }
+
+.perk { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 26px 12px; text-align: center; border-radius: 22px;
+  background: linear-gradient(160deg, rgba(79,240,210,.16), rgba(79,140,255,.1)); border: 1.5px solid rgba(79,240,210,.42); }
+.perk svg { width: 52px; height: 52px; color: var(--mint); }
+.perk b { font-weight: 800; font-size: 15px; line-height: 1.2; text-transform: uppercase; letter-spacing: .03em; }
+.perk span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
+
+.passo .n { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--mint); color: var(--bg1); font-weight: 900; font-size: 22px; margin-bottom: 14px; }
+.passo b { display: block; font-size: 18px; font-weight: 800; }
+
+/* ---------- Lojas ---------- */
+.escuro { background: var(--bg0); }
+.loja { padding: 22px; display: flex; flex-direction: column; gap: 4px; }
+.loja small { font: 600 13px/1 "Oswald", sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--mint); }
+.loja b { font-size: 21px; font-weight: 800; }
+.loja .fone { font-size: 19px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); }
+.loja .acoes { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.sac { margin-top: 20px; padding: 22px 26px; border-radius: 22px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  background: linear-gradient(90deg, #25d366, #128c7e); text-decoration: none; }
+.sac svg { width: 44px; height: 44px; flex: none; }
+.sac div { flex: 1; min-width: 180px; }
+.sac b { display: block; font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: .03em; line-height: 1.2; }
+.sac span { font-size: 15px; font-weight: 600; }
+.sac strong { font-size: clamp(22px, 3vw, 30px); font-weight: 900; font-variant-numeric: tabular-nums; }
+
+/* ---------- Marca ---------- */
+.logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media screen and (max-width: 860px) { .logos { grid-template-columns: 1fr 1fr; } }
+@media screen and (max-width: 520px) { .logos { grid-template-columns: 1fr; } }
+.logo-item { overflow: hidden; display: flex; flex-direction: column; }
+.logo-item .palco { display: grid; place-items: center; height: 190px; padding: 28px; }
+.logo-item .palco img { max-height: 134px; width: auto; max-width: 100%; object-fit: contain; }
+.palco.e { background: linear-gradient(160deg, var(--bg1), var(--bg2)); }
+.palco.c { background: #f3f1fa; }
+.logo-item .info { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border-top: 1.5px solid var(--line); }
+.logo-item .info b { font-size: 14.5px; font-weight: 700; line-height: 1.25; }
+.logo-item .info small { display: block; font-size: 12.5px; color: var(--muted); font-weight: 500; }
+
+.cores { display: grid; grid-template-columns: repeat(7, 1fr); gap: 14px; }
+@media screen and (max-width: 980px) { .cores { grid-template-columns: repeat(4, 1fr); } }
+@media screen and (max-width: 560px) { .cores { grid-template-columns: repeat(2, 1fr); } }
+.cor { all: unset; box-sizing: border-box; cursor: pointer; display: block; border-radius: 18px; overflow: hidden; border: 1.5px solid var(--line); background: var(--glass); }
+.cor:hover { border-color: var(--mint); }
+.cor i { display: block; height: 92px; }
+.cor div { padding: 12px 14px 14px; }
+.cor b { display: block; font-size: 14px; font-weight: 800; line-height: 1.25; }
+.cor code { display: block; font: 600 12px/1.55 ui-monospace, Consolas, monospace; color: var(--muted); }
+.cor code:first-of-type { color: #fff; font-size: 13.5px; margin-top: 4px; }
+
+.tipo { padding: 26px; }
+.tipo .amostra { font-size: clamp(40px, 6vw, 64px); line-height: 1; margin: 6px 0 14px; }
+.tipo .mont { font-family: "Montserrat", sans-serif; font-weight: 900; text-transform: none; letter-spacing: 0; }
+.tipo p { color: var(--muted); font-size: 15px; }
+.tipo a { color: var(--mint); font-weight: 700; }
+
+/* ---------- Materiais ---------- */
+.material { display: grid; grid-template-columns: auto 1fr; gap: clamp(22px, 4vw, 44px); align-items: start; }
+@media screen and (max-width: 760px) { .material { grid-template-columns: 1fr; } }
+.previas { display: flex; gap: 14px; align-items: flex-start; }
+.previas img { border-radius: 10px; box-shadow: 0 16px 40px rgba(0,0,0,.45); }
+.previas.flyer img { width: clamp(120px, 17vw, 190px); }
+.previas.redes img { height: clamp(150px, 20vw, 230px); width: auto; }
+.arquivos { list-style: none; display: grid; gap: 10px; }
+.arquivos li { display: flex; align-items: center; gap: 14px; padding: 13px 16px; border-radius: 16px; background: var(--glass); border: 1.5px solid var(--line); }
+.arquivos li div { flex: 1; min-width: 0; }
+.arquivos b { display: block; font-size: 15px; font-weight: 700; line-height: 1.3; }
+.arquivos small { display: block; font-size: 13px; color: var(--muted); }
+
+.texto-pronto { padding: 26px; }
+.texto-pronto p { color: #fff; font-size: 16.5px; }
+.texto-pronto .btn { margin-top: 18px; }
+
+/* ---------- Fechamento ---------- */
+.fim { text-align: center; }
+.fim .acoes { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+footer { padding: 26px 0 34px; background: var(--bg0); color: var(--muted); font-size: 13.5px; border-top: 1px solid rgba(255,255,255,.08); }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+.aviso { position: fixed; left: 50%; bottom: 26px; translate: -50% 0; z-index: 40; padding: 12px 20px; border-radius: 999px; background: var(--mint); color: var(--bg1); font-weight: 800; font-size: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.4); opacity: 0; pointer-events: none; transition: opacity .2s; }
+.aviso.on { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+
+/* ---------- PDF (impressão): página larga, mesma aparência da tela ---------- */
+@page { size: 1200px 1697px; margin: 0; }
+@media print {
+  html { scroll-behavior: auto; }
+  body { font-size: 16px; }
+  .topo { position: static; }
+  .topo nav, .topo .btn, .so-tela, .aviso { display: none !important; }
+  section { padding: 54px 0; }
+  .card, .perk, .cor, .arquivos li, .sac, .num, .head, .material, .tipo, .g2, .g3, .g4 { break-inside: avoid; }
+  h2, h3, .head, .sub > h3 { break-after: avoid; }
+  .btn:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Vibe Eletronics, início">
+      <img src="img/vibe-simbolo.webp" alt="" width="40" height="40">
+      <span>VIBE<small>ELETRONICS</small></span>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#lojas">Lojas</a>
+      <a href="#marca">Marca</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn cheio mini" href="Vibe-Eletronics-Media-Kit.pdf" target="_blank" rel="noopener">Baixar PDF</a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- Abertura -->
+<section class="hero glow">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Media kit · 2026</p>
+      <h1>Assistência técnica de celulares em Búzios, <em>com conserto em até 24h.</em></h1>
+      <p class="lead">A Vibe Eletronics conserta celulares e vende capas e acessórios em <b>6 lojas em Armação dos Búzios (RJ)</b>. Este kit reúne a apresentação da empresa e os materiais oficiais da marca para imprensa, parceiros, gráficas e designers.</p>
+      <div class="acoes so-tela">
+        <a class="btn cheio" href="downloads/logos/vibe-logos.zip" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg>
+          Baixar logos (.zip)</a>
+        <a class="btn linha" href="#materiais">Ver materiais</a>
+        <a class="btn linha" href="#lojas">Lojas e contatos</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Armação dos Búzios · RJ</span>
+        <span class="chip">Centro e Manguinhos</span>
+        <span class="chip">Orçamento pelo WhatsApp</span>
+        <span class="chip">@vibe.eletronics</span>
+      </div>
+    </div>
+    <div class="pilha" aria-hidden="true">
+      <img src="img/Flyer-verso.webp" alt="" width="700" height="1050">
+      <img src="img/Flyer-frente.webp" alt="" width="700" height="1050">
+    </div>
+  </div>
+</section>
+
+<!-- Números -->
+<section class="numeros" aria-label="A Vibe em números">
+  <div class="wrap">
+    <div class="num"><b>6</b><span>lojas em Búzios</span></div>
+    <div class="num"><b>2</b><span>bairros: Centro e Manguinhos</span></div>
+    <div class="num"><b>24h</b><span>prazo máximo de conserto</span></div>
+    <div class="num"><b>1 mês</b><span>de garantia no serviço</span></div>
+    <div class="num"><b>6</b><span>marcas atendidas</span></div>
+    <div class="num"><b>8</b><span>tipos de serviço</span></div>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="glow">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Sobre</p>
+      <h2>Perto de quem mora e de <em>quem visita Búzios.</em></h2>
+      <p class="lead">Com lojas no Centro e em Manguinhos, a Vibe atende moradores e turistas que precisam do celular funcionando no mesmo dia. O cliente manda o modelo e o defeito pelo WhatsApp, recebe o orçamento e leva o aparelho à loja mais próxima.</p>
+    </div>
+    <div class="g3">
+      <div class="card bloco"><h3>Imprensa</h3><p>Texto de apresentação pronto para copiar, dados das lojas e imagens da marca em alta resolução.</p></div>
+      <div class="card bloco"><h3>Parceiros</h3><p>Pousadas, hotéis, lojas e empresas da região encontram aqui os contatos de cada unidade e o material para indicar a Vibe aos seus clientes.</p></div>
+      <div class="card bloco"><h3>Gráficas e designers</h3><p>Logos com fundo transparente, cores em HEX, RGB e CMYK, fontes e arquivos de impressão com sangria.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Serviços -->
+<section id="servicos" class="escuro">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Serviços</p>
+      <h2>Do vidro trincado ao <em>celular que caiu na água.</em></h2>
+    </div>
+    <div class="g2">
+      <div class="card bloco">
+        <h3>Trocas e reparos</h3>
+        <ul class="lista"><li>Tela / frontal</li><li>Bateria</li><li>Conector de carga</li><li>Placa de carga</li></ul>
+      </div>
+      <div class="card bloco">
+        <h3>Limpeza e software</h3>
+        <ul class="lista"><li>Banho químico</li><li>Desoxidação</li><li>Limpeza interna</li><li>Software e remoção de vírus</li></ul>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Marcas atendidas</h3>
+      <div class="chips">
+        <span class="chip claro">iPhone</span><span class="chip claro">Samsung</span><span class="chip claro">Xiaomi</span>
+        <span class="chip claro">Motorola</span><span class="chip claro">Poco</span><span class="chip claro">Realme</span>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Diferenciais</h3>
+      <div class="g4">
+        <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13.5" r="8"/><path d="M12 9.5v4l2.5 2M10 2h4M12 2v3.5"/></svg><b>Conserto em até 24h</b><span>O aparelho volta para o cliente em até um dia.</span></div>
+        <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><b>Garantia de 1 mês</b><span>Todo serviço sai com garantia.</span></div>
+        <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></svg><b>Parcele no cartão</b><span>Pagamento parcelado no cartão de crédito.</span></div>
+        <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg><b>Capas e acessórios</b><span>Venda de capas e acessórios nas lojas.</span></div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Como é o atendimento</h3>
+      <div class="g3">
+        <div class="card bloco passo"><span class="n">1</span><b>Chame no WhatsApp</b><p>O cliente escolhe a loja mais próxima e envia o modelo do aparelho e o defeito.</p></div>
+        <div class="card bloco passo"><span class="n">2</span><b>Receba o orçamento</b><p>A loja responde com o orçamento. Seguidores do Instagram têm 5% de desconto.</p></div>
+        <div class="card bloco passo"><span class="n">3</span><b>Conserto em até 24h</b><p>O aparelho é consertado em até 24 horas e sai com 1 mês de garantia.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lojas -->
+<section id="lojas" class="glow">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Lojas</p>
+      <h2>Seis lojas, <em>cada uma com seu WhatsApp.</em></h2>
+      <p class="lead">Todas ficam em Armação dos Búzios, RJ. O contato é direto com a unidade.</p>
+    </div>
+    <div class="g3">
+      <div class="card loja"><small>Centro</small><b>Loja Noi</b><span class="fone">(22) 98101-2426</span>
+        <div class="acoes so-tela"><a class="btn wa mini" href="https://wa.me/5522981012426" target="_blank" rel="noopener">WhatsApp</a><a class="btn linha mini" href="https://www.google.com/maps?q=-22.7561717,-41.8883556" target="_blank" rel="noopener">Mapa</a></div></div>
+      <div class="card loja"><small>Centro</small><b>Loja Sky</b><span class="fone">(22) 98172-4239</span>
+        <div class="acoes so-tela"><a class="btn wa mini" href="https://wa.me/5522981724239" target="_blank" rel="noopener">WhatsApp</a><a class="btn linha mini" href="https://www.google.com/maps?q=-22.7566832,-41.8888317" target="_blank" rel="noopener">Mapa</a></div></div>
+      <div class="card loja"><small>Centro</small><b>Loja Pedras</b><span class="fone">(22) 99755-8963</span>
+        <div class="acoes so-tela"><a class="btn wa mini" href="https://wa.me/5522997558963" target="_blank" rel="noopener">WhatsApp</a></div></div>
+      <div class="card loja"><small>Manguinhos</small><b>Loja Manguinhos</b><span class="fone">(22) 98172-4250</span>
+        <div class="acoes so-tela"><a class="btn wa mini" href="https://wa.me/5522981724250" target="_blank" rel="noopener">WhatsApp</a><a class="btn linha mini" href="https://www.google.com/maps?q=-22.771125,-41.9122112" target="_blank" rel="noopener">Mapa</a></div></div>
+      <div class="card loja"><small>Manguinhos</small><b>Loja Princesa</b><span class="fone">(22) 98146-2169</span>
+        <div class="acoes so-tela"><a class="btn wa mini" href="https://wa.me/5522981462169" target="_blank" rel="noopener">WhatsApp</a><a class="btn linha mini" href="https://www.google.com/maps?q=-22.7716795,-41.9125966" target="_blank" rel="noopener">Mapa</a></div></div>
+      <div class="card loja"><small>Manguinhos</small><b>Loja Fox</b><span class="fone">(22) 98146-2163</span>
+        <div class="acoes so-tela"><a class="btn wa mini" href="https://wa.me/5522981462163" target="_blank" rel="noopener">WhatsApp</a><a class="btn linha mini" href="https://www.google.com/maps?q=-22.7728478,-41.9133801" target="_blank" rel="noopener">Mapa</a></div></div>
+    </div>
+    <a class="sac" href="https://wa.me/5522991837583" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.3 4.6 4.8-1.3A9.8 9.8 0 1 0 12 2.2zm5.3 13.6c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+      <div><b>SAC Vibe</b><span>Dúvidas gerais, suporte, imprensa e parcerias</span></div>
+      <strong>(22) 99183-7583</strong>
+    </a>
+  </div>
+</section>
+
+<!-- Marca -->
+<section id="marca" class="escuro">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Marca</p>
+      <h2>Logos, cores e fontes <em>oficiais.</em></h2>
+      <p class="lead">Arquivos PNG com fundo transparente. Use a versão de fundo escuro sobre roxo ou preto e a de fundo claro sobre branco ou tons claros.</p>
+    </div>
+
+    <div class="logos">
+      <div class="card logo-item"><div class="palco e"><img src="img/vibe-logo-horizontal-fundo-escuro.webp" alt="Logo horizontal da Vibe Eletronics para fundo escuro" loading="lazy"></div>
+        <div class="info"><b>Horizontal<small>para fundo escuro</small></b><a class="btn linha mini so-tela" href="downloads/logos/vibe-logo-horizontal-fundo-escuro.png" download>PNG</a></div></div>
+      <div class="card logo-item"><div class="palco c"><img src="img/vibe-logo-horizontal-fundo-claro.webp" alt="Logo horizontal da Vibe Eletronics para fundo claro" loading="lazy"></div>
+        <div class="info"><b>Horizontal<small>para fundo claro</small></b><a class="btn linha mini so-tela" href="downloads/logos/vibe-logo-horizontal-fundo-claro.png" download>PNG</a></div></div>
+      <div class="card logo-item"><div class="palco e"><img src="img/vibe-simbolo.webp" alt="Símbolo da Vibe Eletronics: celular com engrenagem dentro de um anel verde-água" loading="lazy"></div>
+        <div class="info"><b>Símbolo<small>redondo, fundo transparente</small></b><a class="btn linha mini so-tela" href="downloads/logos/vibe-simbolo.png" download>PNG</a></div></div>
+      <div class="card logo-item"><div class="palco e"><img src="img/vibe-logo-vertical-fundo-escuro.webp" alt="Logo vertical para fundo escuro" loading="lazy"></div>
+        <div class="info"><b>Vertical<small>para fundo escuro</small></b><a class="btn linha mini so-tela" href="downloads/logos/vibe-logo-vertical-fundo-escuro.png" download>PNG</a></div></div>
+      <div class="card logo-item"><div class="palco c"><img src="img/vibe-logo-vertical-fundo-claro.webp" alt="Logo vertical para fundo claro" loading="lazy"></div>
+        <div class="info"><b>Vertical<small>para fundo claro</small></b><a class="btn linha mini so-tela" href="downloads/logos/vibe-logo-vertical-fundo-claro.png" download>PNG</a></div></div>
+      <div class="card logo-item"><div class="palco e"><img src="img/vibe-nome-branco.webp" alt="Nome Vibe Eletronics em branco" loading="lazy"></div>
+        <div class="info"><b>Só o nome<small>branco, colorido e para fundo claro</small></b><a class="btn linha mini so-tela" href="downloads/logos/vibe-logos.zip" download>ZIP</a></div></div>
+    </div>
+
+    <div class="sub">
+      <h3>Cores</h3>
+      <div class="cores">
+        <button class="cor" data-hex="#1C0E40"><i style="background:#1c0e40"></i><div><b>Roxo profundo</b><code>#1C0E40</code><code>RGB 28 14 64</code><code>CMYK 100 100 40 49</code></div></button>
+        <button class="cor" data-hex="#3E1F7A"><i style="background:#3e1f7a"></i><div><b>Roxo Vibe</b><code>#3E1F7A</code><code>RGB 62 31 122</code><code>CMYK 93 100 13 3</code></div></button>
+        <button class="cor" data-hex="#0B0520"><i style="background:#0b0520"></i><div><b>Roxo noite</b><code>#0B0520</code><code>RGB 11 5 32</code><code>CMYK 97 92 50 79</code></div></button>
+        <button class="cor" data-hex="#4FF0D2"><i style="background:#4ff0d2"></i><div><b>Verde-água</b><code>#4FF0D2</code><code>RGB 79 240 210</code><code>CMYK 56 0 32 0</code></div></button>
+        <button class="cor" data-hex="#0B8F7B"><i style="background:#0b8f7b"></i><div><b>Verde petróleo</b><code>#0B8F7B</code><code>RGB 11 143 123</code><code>CMYK 82 20 58 5</code></div></button>
+        <button class="cor" data-hex="#2FD8FF"><i style="background:#2fd8ff"></i><div><b>Ciano</b><code>#2FD8FF</code><code>RGB 47 216 255</code><code>CMYK 60 0 4 0</code></div></button>
+        <button class="cor" data-hex="#CFC6F2"><i style="background:#cfc6f2"></i><div><b>Lilás claro</b><code>#CFC6F2</code><code>RGB 207 198 242</code><code>CMYK 21 25 0 0</code></div></button>
+      </div>
+      <p class="lead" style="font-size:14.5px">Toque em uma cor para copiar o código. Valores CMYK no perfil Coated FOGRA39. O verde-água é uma cor de tela: no papel ele fica menos vivo. O verde petróleo substitui o verde-água em textos sobre fundo claro.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Tipografia</h3>
+      <div class="g2">
+        <div class="card tipo"><p class="eyebrow">Nome e textos</p><div class="amostra mont">Montserrat</div><p>Peso 900 no nome "VIBE", 700 em "ELETRONICS" e 500 a 800 nos textos. Fonte gratuita: <a href="https://fonts.google.com/specimen/Montserrat" target="_blank" rel="noopener">Google Fonts</a>.</p></div>
+        <div class="card tipo"><p class="eyebrow">Títulos e chamadas</p><div class="amostra osw">Oswald</div><p>Peso 700, em maiúsculas, com espaçamento leve entre as letras. Fonte gratuita: <a href="https://fonts.google.com/specimen/Oswald" target="_blank" rel="noopener">Google Fonts</a>.</p></div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Uso do logo</h3>
+      <div class="g2">
+        <div class="card bloco"><b>Pode</b>
+          <ul class="lista txt">
+            <li>Deixar em volta do logo um espaço livre igual à altura da letra "E" de VIBE.</li>
+            <li>Usar o símbolo sozinho em espaços pequenos, como ícones e fotos de perfil.</li>
+            <li>Manter o logo horizontal com pelo menos 30 mm de largura no impresso e 160 px na tela.</li>
+          </ul></div>
+        <div class="card bloco"><b>Evite</b>
+          <ul class="lista txt nao">
+            <li>Esticar, inclinar ou mudar a proporção entre o símbolo e o nome.</li>
+            <li>Trocar as cores ou a fonte, ou escrever "Electronics" com C: o nome é Eletronics.</li>
+            <li>Aplicar a versão de fundo escuro sobre fotos claras ou fundos com pouco contraste.</li>
+          </ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Materiais -->
+<section id="materiais" class="glow">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Materiais</p>
+      <h2>Prontos para imprimir <em>e publicar.</em></h2>
+    </div>
+
+    <h3 style="margin-bottom:18px;color:var(--mint)">Flyer 10 × 15 cm, frente e verso</h3>
+    <div class="material">
+      <div class="previas flyer">
+        <img src="img/Flyer-frente.webp" alt="Frente do flyer: serviços, marcas atendidas e desconto para seguidores" width="700" height="1050" loading="lazy">
+        <img src="img/Flyer-verso.webp" alt="Verso do flyer: WhatsApp das seis lojas e do SAC" width="700" height="1050" loading="lazy">
+      </div>
+      <ul class="arquivos">
+        <li><div><b>Frente e verso em PDF</b><small>10 × 15 cm, RGB · 2,9 MB</small></div><a class="btn linha mini so-tela" href="downloads/flyer/Flyer-Vibe-10x15cm.pdf" download>PDF</a></li>
+        <li><div><b>Imagens para tela</b><small>PNG 3000 × 4500 px · 5,6 e 5,1 MB</small></div><a class="btn linha mini so-tela" href="downloads/flyer/Flyer-frente.png" download>Frente</a><a class="btn linha mini so-tela" href="downloads/flyer/Flyer-verso.png" download>Verso</a></li>
+        <li><div><b>Para gráfica, CMYK com sangria</b><small>PDF 10,6 × 15,6 cm, Coated FOGRA39 · 11,8 MB</small></div><a class="btn cheio mini so-tela" href="downloads/flyer/Flyer-Vibe-CMYK-com-sangria.pdf" download>PDF</a></li>
+        <li><div><b>Para gráfica, CMYK em TIFF</b><small>Frente e verso com sangria e perfil embutido · 13,4 MB</small></div><a class="btn linha mini so-tela" href="downloads/flyer/Flyer-Vibe-CMYK-TIFF.zip" download>ZIP</a></li>
+        <li><div><b>Para gráfica, RGB com sangria</b><small>PDF 10,6 × 15,6 cm, para gráficas que convertem as cores · 3,1 MB</small></div><a class="btn linha mini so-tela" href="downloads/flyer/Flyer-Vibe-grafica-com-sangria.pdf" download>PDF</a></li>
+      </ul>
+    </div>
+
+    <div class="sub">
+      <h3>Redes sociais</h3>
+      <div class="material">
+        <div class="previas redes">
+          <img src="img/vibe-post-1080.webp" alt="Arte quadrada para post" loading="lazy">
+          <img src="img/vibe-story-1080x1920.webp" alt="Arte vertical para story" loading="lazy">
+        </div>
+        <ul class="arquivos">
+          <li><div><b>Post quadrado</b><small>PNG 1080 × 1080 px</small></div><a class="btn linha mini so-tela" href="downloads/redes/vibe-post-1080.png" download>PNG</a></li>
+          <li><div><b>Story</b><small>PNG 1080 × 1920 px, com margens livres para a interface</small></div><a class="btn linha mini so-tela" href="downloads/redes/vibe-story-1080x1920.png" download>PNG</a></li>
+          <li><div><b>Foto de perfil</b><small>PNG 1080 × 1080 px</small></div><a class="btn linha mini so-tela" href="downloads/redes/vibe-avatar-1080.png" download>PNG</a></li>
+          <li><div><b>QR code do Instagram</b><small>Abre o perfil @vibe.eletronics</small></div><a class="btn linha mini so-tela" href="downloads/redes/vibe-qr-instagram.png" download>PNG</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3>Texto de apresentação</h3>
+      <div class="card texto-pronto">
+        <p id="texto">A Vibe Eletronics é uma assistência técnica de celulares com seis lojas em Armação dos Búzios (RJ), no Centro e em Manguinhos. Faz troca de tela, bateria, conector e placa de carga, banho químico, desoxidação, limpeza e serviços de software em aparelhos iPhone, Samsung, Xiaomi, Motorola, Poco e Realme. O conserto fica pronto em até 24 horas, tem 1 mês de garantia e pode ser parcelado no cartão. As lojas também vendem capas e acessórios. Orçamentos pelo WhatsApp de cada unidade. Instagram: @vibe.eletronics.</p>
+        <button class="btn linha so-tela" id="copiar-texto" type="button">Copiar texto</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="escuro fim">
+  <div class="wrap">
+    <p class="eyebrow">Contato</p>
+    <h2>Imprensa, parcerias <em>e dúvidas sobre a marca.</em></h2>
+    <p class="lead" style="margin-inline:auto">Fale com o SAC da Vibe pelo WhatsApp <b>(22) 99183-7583</b> ou pelo Instagram <b>@vibe.eletronics</b>.</p>
+    <div class="acoes so-tela">
+      <a class="btn wa" href="https://wa.me/5522991837583" target="_blank" rel="noopener">Falar com o SAC</a>
+      <a class="btn linha" href="https://www.instagram.com/vibe.eletronics/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn linha" href="Vibe-Eletronics-Media-Kit.pdf" target="_blank" rel="noopener">Baixar este kit em PDF</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Vibe Eletronics · Armação dos Búzios, RJ</span><span>Media kit · atualizado em novembro de 2026 · <a href="https://blade0667.github.io/vibe-eletronics/">Site da Vibe</a></span></div>
+</footer>
+
+<div class="aviso" role="status" aria-live="polite"></div>
+
+<script>
+// Copiar cores e texto de apresentação
+const aviso = document.querySelector(".aviso");
+let timer;
+function copiar(texto, msg) {
+  const ok = () => { aviso.textContent = msg; aviso.classList.add("on"); clearTimeout(timer); timer = setTimeout(() => aviso.classList.remove("on"), 1800); };
+  if (navigator.clipboard) navigator.clipboard.writeText(texto).then(ok, () => fallback(texto, ok));
+  else fallback(texto, ok);
+}
+function fallback(texto, ok) {
+  const t = Object.assign(document.createElement("textarea"), { value: texto });
+  document.body.append(t); t.select();
+  try { document.execCommand("copy"); ok(); } finally { t.remove(); }
+}
+document.querySelectorAll(".cor").forEach(b => {
+  b.setAttribute("aria-label", "Copiar " + b.dataset.hex);
+  b.addEventListener("click", () => copiar(b.dataset.hex, b.dataset.hex + " copiado"));
+});
+document.getElementById("copiar-texto").addEventListener("click", () =>
+  copiar(document.getElementById("texto").textContent.trim(), "Texto copiado"));
+</script>
+</body>
+</html>

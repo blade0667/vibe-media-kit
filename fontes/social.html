@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Vibe Eletronics — artes para redes</title>
+<link rel="stylesheet" href="marca.css">
+<!-- Formatos pelo endereço: social.html#post (1080x1080), #story (1080x1920), #og (1200x630) -->
+<!-- #og-site troca a legenda da capa para a da landing page -->
+<script>document.documentElement.className = (location.hash.slice(1) || "post").replace(/-/g, " ");</script>
+<style>
+  html, body { width: 100%; height: 100%; background: var(--bg0); }
+  .arte { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center; }
+
+  .lockup { justify-content: center; }
+  .perks { display: grid; gap: 22px; width: 100%; }
+  .perk {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+    border-radius: 28px; border: 2px solid rgba(79, 240, 210, 0.45);
+    background: linear-gradient(160deg, rgba(79, 240, 210, 0.18), rgba(79, 140, 255, 0.12));
+  }
+  .perk svg { color: var(--mint); }
+  .perk span { font-weight: 800; line-height: 1.15; text-transform: uppercase; }
+  .servicos { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 30px; width: 100%; text-align: left; }
+  .servicos li { display: flex; align-items: center; gap: 16px; font-weight: 600; font-size: 38px; }
+  .servicos li::before {
+    content: ""; flex: none; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4 8-9' fill='none' stroke='%231c0e40' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/24px no-repeat;
+  }
+  .pe { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  .pill { padding: 14px 30px; border-radius: 999px; font-weight: 800; }
+  .pill.cheia { background: var(--mint); color: var(--bg1); }
+  .pill.linha { border: 2px solid rgba(79, 240, 210, 0.6); }
+  .kit { display: none; }
+
+  /* ---------- Post 1080 x 1080 ---------- */
+  .post .arte { padding: 80px 72px 72px; }
+  .post .lockup { gap: 40px; }
+  .post .logo { width: 210px; height: 210px; }
+  .post .wordmark { gap: 26px; }
+  .post .vibe { font-size: 166px; }
+  .post .ele { font-size: 44px; }
+  .post h1 { font-size: 92px; line-height: 1.08; }
+  .post .servicos { display: none; }
+  .post .perks { grid-template-columns: repeat(4, 1fr); }
+  .post .perk { height: 220px; }
+  .post .perk svg { width: 76px; height: 76px; }
+  .post .perk span { font-size: 23px; }
+  .post .pill { font-size: 30px; }
+
+  /* ---------- Story 1080 x 1920 (margens livres para a interface do Instagram) ---------- */
+  .story .arte { padding: 230px 76px 270px; }
+  .story .lockup { gap: 40px; }
+  .story .logo { width: 210px; height: 210px; }
+  .story .wordmark { gap: 26px; }
+  .story .vibe { font-size: 166px; }
+  .story .ele { font-size: 44px; }
+  .story h1 { font-size: 98px; line-height: 1.08; white-space: nowrap; }
+  .story .servicos { gap: 16px 24px; }
+  .story .servicos li { font-size: 34px; }
+  .story .perks { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .story .perk { height: 150px; flex-direction: row; gap: 22px; text-align: left; }
+  .story .perk svg { width: 70px; height: 70px; }
+  .story .perk span { font-size: 28px; }
+  .story .pill { font-size: 34px; padding: 16px 34px; }
+
+  /* ---------- Capa de link 1200 x 630 ---------- */
+  .og .arte { padding: 70px; justify-content: center; gap: 56px; }
+  .og .lockup { gap: 44px; }
+  .og .logo { width: 230px; height: 230px; }
+  .og .wordmark { gap: 28px; }
+  .og .vibe { font-size: 180px; }
+  .og .ele { font-size: 48px; }
+  .og h1, .og .servicos, .og .perks, .og .pe { display: none; }
+  .og .kit { display: block; font-size: 34px; letter-spacing: 5px; white-space: nowrap; }
+  .og .kit.k2, .og.site .kit.k1 { display: none; }
+  .og.site .kit.k2 { display: block; }
+</style>
+</head>
+<body>
+<main class="arte">
+
+  <div class="lockup">
+    <div class="logo"><img src="simbolo-original.png" alt=""></div>
+    <div class="wordmark">
+      <span class="vibe">VIBE</span>
+      <span class="ele"><i>E</i><i>L</i><i>E</i><i>T</i><i>R</i><i>O</i><i>N</i><i>I</i><i>C</i><i>S</i></span>
+    </div>
+  </div>
+
+  <h1 class="oswald">Assistência técnica<br><span class="mint">especializada</span></h1>
+  <p class="kit k1 oswald">Media kit <span class="mint">2026</span> · Armação dos Búzios, RJ</p>
+  <p class="kit k2 oswald">Conserto de celular em Búzios · <span class="mint">até 24h</span></p>
+
+  <ul class="servicos">
+    <li>Tela / frontal</li><li>Banho químico</li>
+    <li>Bateria</li><li>Desoxidação</li>
+    <li>Conector de carga</li><li>Limpeza interna</li>
+    <li>Placa de carga</li><li>Software e vírus</li>
+  </ul>
+
+  <div class="perks">
+    <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg><span>Capas e<br>acessórios</span></div>
+    <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span>Garantia<br>de 1 mês</span></div>
+    <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13.5" r="8"/><path d="M12 9.5v4l2.5 2M10 2h4M12 2v3.5"/></svg><span>Conserto<br>em até 24h</span></div>
+    <div class="perk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></svg><span>Parcele<br>no cartão</span></div>
+  </div>
+
+  <div class="pe">
+    <span class="pill cheia">6 lojas em Búzios</span>
+    <span class="pill linha">@vibe.eletronics</span>
+  </div>
+
+</main>
+</body>
+</html>

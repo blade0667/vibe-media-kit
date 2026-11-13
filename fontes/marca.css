@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap");
+
+/* Base da marca Vibe Eletronics, usada pelos modelos de logo e de redes sociais. */
+:root {
+  --bg0: #0b0520;
+  --bg1: #1c0e40;
+  --bg2: #3e1f7a;
+  --mint: #4ff0d2;
+  --mint-escuro: #0b8f7b;
+  --cyan: #2fd8ff;
+  --muted: #cfc6f2;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Montserrat", sans-serif; color: #fff; }
+
+/* Assinatura: "VIBE" define a largura; "ELETRONICS" vai de ponta a ponta. */
+.lockup { display: flex; align-items: center; }
+.logo { flex: none; border-radius: 50%; overflow: hidden; }
+.logo img { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.2); }
+.wordmark { display: inline-flex; flex-direction: column; }
+.wordmark .vibe {
+  display: block; font-weight: 900; line-height: 0.7;
+  padding: 0.04em 0; margin: -0.04em 0;
+  background: linear-gradient(180deg, #ffffff 35%, #b9f6ff 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.wordmark .ele {
+  display: flex; justify-content: space-between;
+  font-weight: 700; line-height: 0.7; color: var(--mint);
+  margin-left: -0.087em; margin-right: 0.153em;
+}
+.wordmark .ele i { font-style: normal; }
+
+/* Fundo padrão das artes */
+.arte {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(90% 40% at 85% 6%, rgba(47, 216, 255, 0.28), transparent 60%),
+    radial-gradient(80% 50% at 0% 55%, rgba(124, 77, 255, 0.35), transparent 60%),
+    linear-gradient(160deg, var(--bg1) 0%, var(--bg2) 55%, #24125a 100%);
+}
+.arte::before {
+  content: ""; position: absolute; inset: -20%;
+  background: repeating-linear-gradient(115deg,
+      transparent 0 140px, rgba(255, 255, 255, 0.03) 140px 220px, transparent 220px 360px);
+}
+.arte > * { position: relative; z-index: 1; }
+.oswald { font-family: "Oswald", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+.mint { color: var(--mint); }
